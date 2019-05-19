@@ -13,8 +13,6 @@ state("fceux")
 }
 state("nestopia")
 {
-	// base 0x0000 address of ROM : "nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0x68;
-	// just add your fceux offset to 0x68 to get the final nestopia offset
 	byte passchar1 : "nestopia.exe", 0x1B2BCC, 0, 8, 0xc, 0xc, 0x6C; // 1-9
 	byte passchar2 : "nestopia.exe", 0x1B2BCC, 0, 8, 0xc, 0xc, 0x6D; // 1-9
 	byte passchar3 : "nestopia.exe", 0x1B2BCC, 0, 8, 0xc, 0xc, 0x6E; // 1-9
@@ -25,9 +23,6 @@ state("nestopia")
 
 startup
 {
-
-	//settings.SetToolTip("onLevelEnd", "Splits on score screen after finish a level");
-
 	settings.Add("Options", true, "Options");
 
 		settings.Add("OnLevel", true, "Split each level", "Options");
