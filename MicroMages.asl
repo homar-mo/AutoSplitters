@@ -30,14 +30,14 @@ startup
 
 	settings.Add("Options", true, "Options");
 
-		settings.Add("OnLevel", true, "Split every level", "Options");
-		settings.SetToolTip("OnLevel", "If use this the option below is not needed.");
+		settings.Add("OnLevel", true, "Split each level", "Options");
+		settings.SetToolTip("OnLevel", "Splits when the screen fade out after each level.");
 
 		settings.Add("OnTower", true, "Split after boss", "Options");
-		settings.SetToolTip("OnTower", "Use this to split after defeat the tower's boss.");
+		settings.SetToolTip("OnTower", "Splits when the screen fade out after each boss.");
 
 		settings.Add("AllowPause", false, "Allow Pause", "Options");
-		settings.SetToolTip("AllowPause", "Use this to puese the timer when the game is puased (only for Game Time).");
+		settings.SetToolTip("AllowPause", "Use this to pause the timer when the game is paused (only for Game Time).");
 }
 
 init
